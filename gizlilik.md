@@ -7,7 +7,7 @@ lang: tr
 
 [English](privacy) · [Destek](./)
 
-**Son güncelleme:** 17 Ekim 2026
+**Son güncelleme:** 19 Ekim 2026
 
 ## 1. Veri sorumlusu
 
@@ -25,8 +25,9 @@ Reklam, analiz/izleme aracı ve üçüncü taraf takip **kullanılmaz**. Veriler
 
 | Veri | Neden | Nerede | Ne kadar süre |
 |---|---|---|---|
-| E-posta adresi | Hesap oluşturma ve giriş | Sunucu (Supabase, Frankfurt/AB) | Hesap silinene kadar |
-| Görünen ad | Eşinize kim olduğunuzu göstermek | Sunucu | Hesap silinene kadar |
+| E-posta adresi (Apple ile Giriş'te Apple'ın paylaştığı; "E-postamı gizle" seçilirse Apple'ın yönlendirme adresi) | Hesap | Sunucu (Supabase, Frankfurt/AB) | Hesap silinene kadar |
+| Görünen ad (Apple'ın ilk girişte paylaştığı ya da sizin yazdığınız) | Eşinize kim olduğunuzu göstermek | Sunucu | Hesap silinene kadar |
+| Apple ile Giriş bağlantı anahtarı | Hesabınızı sildiğinizde Apple'daki bağlantıyı da iptal etmek | Sunucu (uygulama dahil kimse okuyamaz) | Hesap silinirken iptal edilip silinir |
 | Kullanıcı kimliği, eşleşme bilgisi | Sizi eşinizle eşleştirmek | Sunucu | Hesap silinene / eşleşme bitene kadar |
 | Şifreleme açık anahtarı | Eşinizin size şifreli veri gönderebilmesi | Sunucu | Hesap silinene kadar |
 | Şifreli paketler (içeriği okunamaz) | Değişikliklerin eşinize iletilmesi | Sunucu | Eşiniz teslim alınca silinir; en geç 30 gün |
@@ -47,7 +48,7 @@ Bildirimde mesajın içeriği **gönderilmez**; yalnızca gönderenin adı ve "Y
 - **Yeni telefona geri yükleme:** Telefon değiştirdiğinizde ortak verileriniz, eşinizin onayıyla onun telefonundan
   uçtan uca şifreli olarak size gönderilir.
 - **Satın almalar (Halfie+, hediyeler):** Ödeme Apple tarafından alınır; kart bilgilerinizi görmeyiz. Aboneliğinizin
-  eşinizle paylaşılması uçtan uca şifreli bir paketle yapılır.
+  eşinizle paylaşılması uçtan uca şifreli bir paketle yapılır; eşleşme bitince paylaşım da biter.
 
 ## 5. Hukuki sebep (KVKK m.5)
 
@@ -57,7 +58,7 @@ Bildirimde mesajın içeriği **gönderilmez**; yalnızca gönderenin adı ve "Y
 ## 6. Aktarım
 
 Sunucu hizmeti Supabase Inc. tarafından Avrupa Birliği'nde (Frankfurt) barındırılır. Bildirimler Apple Push
-Notification Service, ödemeler App Store, isteğe bağlı yedek iCloud üzerinden Apple Inc. tarafından işlenir. Bu,
+Notification Service, giriş Apple ile Giriş, ödemeler App Store, isteğe bağlı yedek iCloud üzerinden Apple Inc. tarafından işlenir. Bu,
 kişisel verilerin **yurt dışına aktarımı** anlamına gelir (KVKK m.9). Uçtan uca şifreli içerikler bu sağlayıcılar
 tarafından okunamaz.
 
@@ -67,7 +68,7 @@ Verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, s
 [official.mediatv.tr@gmail.com](mailto:official.mediatv.tr@gmail.com) adresine yazabilirsiniz.
 
 **Hesabınızı uygulama içinden silebilirsiniz:** Ayarlar → Hesabı sil. Bu işlem sunucudaki hesap, eşleşme,
-anahtar, bildirim adresi ve bekleyen paketleri kalıcı olarak siler; telefonunuzdaki veriler de silinir.
+anahtar, bildirim adresi ve bekleyen paketleri kalıcı olarak siler, Apple ile Giriş bağlantısını iptal eder; telefonunuzdaki veriler de silinir.
 Eşinizin telefonundaki kopyaları ve kendi iCloud'unuzdaki yedeği biz silemeyiz.
 
 ## 8. Güvenlik

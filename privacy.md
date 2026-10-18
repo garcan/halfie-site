@@ -7,7 +7,7 @@ lang: en
 
 [Türkçe](gizlilik) · [Support](./)
 
-**Last updated:** October 17, 2026
+**Last updated:** October 19, 2026
 
 ## 1. Data controller
 
@@ -25,8 +25,9 @@ We use **no** ads, analytics, tracking tools or third-party trackers. Your data 
 
 | Data | Why | Where | How long |
 |---|---|---|---|
-| Email address | Creating your account and signing in | Server (Supabase, Frankfurt/EU) | Until the account is deleted |
-| Display name | Showing your partner who you are | Server | Until the account is deleted |
+| Email address (shared by Apple when you Sign in with Apple; Apple's relay address if you choose "Hide My Email") | Your account | Server (Supabase, Frankfurt/EU) | Until the account is deleted |
+| Display name (shared by Apple at first sign-in, or typed by you) | Showing your partner who you are | Server | Until the account is deleted |
+| Sign in with Apple link token | Revoking the link at Apple when you delete your account | Server (not readable by anyone, including the app) | Revoked and deleted when the account is deleted |
 | User ID, pairing information | Pairing you with your partner | Server | Until the account is deleted / pairing ends |
 | Public encryption key | Letting your partner send you encrypted data | Server | Until the account is deleted |
 | Encrypted packets (content unreadable) | Delivering changes to your partner | Server | Deleted once your partner receives them; at most 30 days |
@@ -47,12 +48,12 @@ Notifications **never** contain message content; they only show the sender's nam
 - **Restore to a new phone:** When you switch phones, your shared data is sent to you end-to-end encrypted from your
   partner's phone, with their approval.
 - **Purchases (Halfie+, gifts):** Payment is handled by Apple; we never see your card details. Sharing your
-  subscription with your partner happens through an end-to-end encrypted packet.
+  subscription with your partner happens through an end-to-end encrypted packet; sharing ends when the pairing ends.
 
 ## 5. Transfers
 
 Our server is hosted by Supabase Inc. in the European Union (Frankfurt). Notifications are processed by Apple Push
-Notification Service, payments by the App Store, and the optional backup by iCloud (Apple Inc.). End-to-end encrypted
+Notification Service, sign-in by Sign in with Apple, payments by the App Store, and the optional backup by iCloud (Apple Inc.). End-to-end encrypted
 content cannot be read by any of these providers.
 
 ## 6. Your rights
@@ -61,7 +62,7 @@ To ask whether and how your data is processed, or to request correction, deletio
 [official.mediatv.tr@gmail.com](mailto:official.mediatv.tr@gmail.com).
 
 **You can delete your account in the app:** Settings → Delete account. This permanently deletes your account,
-pairing, keys, notification address and pending packets from the server, and the data on your phone.
+pairing, keys, notification address and pending packets from the server, revokes your Sign in with Apple link, and deletes the data on your phone.
 We cannot delete copies on your partner's phone or the backup in your own iCloud.
 
 ## 7. Security
